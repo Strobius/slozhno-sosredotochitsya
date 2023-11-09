@@ -2,3 +2,9 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root { 
+  --fsize: 18px;
+  --titlesize: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --mainlineh: 23.4px;
+  --mainfontf: 'IBM Plex mono';
+}
