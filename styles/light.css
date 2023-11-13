@@ -11,6 +11,8 @@
 
 .page.theme_light {
     --fontcolor: #353430;
+    --htitlecolor: #ffc2e6;
+    --bgcolor: #FF8DCB;
     background-image: url(../images/cover-image-light.png);
     background-size: cover;
     background-repeat:no-repeat;
@@ -18,12 +20,57 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme_light{
-    
+  :root.page.theme_light {
+    --fontcolor: #353430;
+    --htitlecolor: #ffc2e6;
+    --bgcolor: #FF8DCB;
   }
+  
 }
 
-.header__theme-menu-button {
-  /* color: var(--fontcolor); */
+/* .header__theme-menu-button {
+  color: var(--fontcolor);
 }
 
+.header__theme-menu-button_active {
+  outline: 1px solid var(--fontcolor);
+}
+
+.header-title {
+  color: var(--htitlecolor);
+}
+
+.header-text {
+  color: var(--fontcolor);
+}
+
+.decorated-zone::before {
+  border-inline-end: 1px solid var(--fontcolor);
+  border-block-start: 1px solid var(--fontcolor);
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--fontcolor);
+  border-block-end: 1px solid var(--fontcolor);
+}
+
+.title-decor {
+  background-color: var(--bgcolor);
+}
+
+.section-title {
+  color: var(--fontcolor);
+}
+
+.section-text {
+  color: var(--fontcolor);
+}
+
+.list-title {
+  color: var(--fontcolor);
+}
+
+.footer-title {
+  color: var(--htitlecolor);
+  text-shadow: 2px 2px 0px var(--bgcolor);
+} */

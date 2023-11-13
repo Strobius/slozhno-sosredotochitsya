@@ -16,10 +16,11 @@
   --sectxtcolor: #F1B2CE;
 }
 
-  :root.theme-dark {
-    --tcolor: #000028;
-    --tbckcolor: #FF0070;
-    --focuscolor: #DB00FF;
-    --sectxtcolor: #F1B2CE;
+  @media (prefers-color-scheme: dark) {
+    :root.page.theme_dark {
+      --tcolor: #000028;
+      --tbckcolor: #FF0070;
+      --focuscolor: #DB00FF;
+      --sectxtcolor: #F1B2CE;
+    }
   }
-
