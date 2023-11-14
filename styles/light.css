@@ -20,16 +20,6 @@
 
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --fontcolor: #353430;
-    --htitlecolor: #ffc2e6;
-    --bgcolor: #FF8DCB;
-    --themelightimg: url(../images/cover-image-light.png);
-  }
-  
-}
-
 .theme_light .header__theme-menu-button {
   color: var(--fontcolor);
 }
@@ -112,3 +102,102 @@
     text-shadow: 4px 4px 0px var(--bgcolor)
   }
 }
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --fontcolor: #353430;
+    --htitlecolor: #ffc2e6;
+    --bgcolor: #FF8DCB;
+    --themelightimg: url(../images/cover-image-light.png);
+  }
+
+  .page {
+    background-image: var(--themelightimg);
+  }
+
+   .header__theme-menu-button {
+    color: var(--fontcolor);
+  }
+  
+   .header__theme-menu-button_active {
+    outline: 1px solid var(--fontcolor);
+  }
+  
+   .header__theme-menu-button:focus-visible {
+    outline: none;
+    border-bottom: 1px solid var(--fontcolor);
+  }
+  
+   .header-title {
+    color: var(--htitlecolor);
+  }
+  
+   .header-text {
+    color: var(--fontcolor);
+  }
+  
+   .dark-theme-decoration::before {
+    display: none;
+  }
+  
+   .decoration-point::before {
+    display: none;
+  }
+  
+   .decorated-zone::before {
+    border-inline-end: 1px solid var(--fontcolor);
+    border-block-start: 1px solid var(--fontcolor);
+  }
+  
+   .decorated-zone::after {
+    border-inline-start: 1px solid var(--fontcolor);
+    border-block-end: 1px solid var(--fontcolor);
+  }
+  
+   .title-decor {
+    background-color: var(--bgcolor);
+  }
+  
+   .txt-link {
+    text-shadow: 2px 2px 0px var(--bgcolor)
+  }
+  
+   .section-title {
+    color: var(--fontcolor);
+  }
+  
+   .section-text {
+    color: var(--fontcolor);
+  }
+  
+  .list-title {
+    color: var(--fontcolor);
+  }
+  
+   .footer-title {
+    color: var(--htitlecolor);
+  }
+  
+  @media (575px < width < 915px) {
+     .header-title {
+      text-shadow: 4px 4px 0px var(--bgcolor)
+    }
+  
+     .footer-title {
+      text-shadow: 4px 4px 0px var(--bgcolor)
+    }
+  }
+  
+  @media (width <= 375px) {
+     .header-title {
+      text-shadow: 4px 4px 0px var(--bgcolor)
+    }
+  
+     .footer-title {
+      text-shadow: 4px 4px 0px var(--bgcolor)
+    }
+  }
+  
+}
+
