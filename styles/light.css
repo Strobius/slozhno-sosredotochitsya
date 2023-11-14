@@ -13,64 +13,102 @@
     --fontcolor: #353430;
     --htitlecolor: #ffc2e6;
     --bgcolor: #FF8DCB;
-    background-image: url(../images/cover-image-light.png);
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
+    --themelightimg: url(../images/cover-image-light.png);
+
+    
+    background-image: var(--themelightimg);
+
 }
 
 @media (prefers-color-scheme: light) {
-  :root.page.theme_light {
+  :root {
     --fontcolor: #353430;
     --htitlecolor: #ffc2e6;
     --bgcolor: #FF8DCB;
+    --themelightimg: url(../images/cover-image-light.png);
   }
   
 }
 
-/* .header__theme-menu-button {
+.theme_light .header__theme-menu-button {
   color: var(--fontcolor);
 }
 
-.header__theme-menu-button_active {
+.theme_light .header__theme-menu-button_active {
   outline: 1px solid var(--fontcolor);
 }
 
-.header-title {
+.theme_light .header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--fontcolor);
+}
+
+.theme_light .header-title {
   color: var(--htitlecolor);
 }
 
-.header-text {
+.theme_light .header-text {
   color: var(--fontcolor);
 }
 
-.decorated-zone::before {
+.theme_light .dark-theme-decoration::before {
+  display: none;
+}
+
+.theme_light .decoration-point::before {
+  display: none;
+}
+
+.theme_light .decorated-zone::before {
   border-inline-end: 1px solid var(--fontcolor);
   border-block-start: 1px solid var(--fontcolor);
 }
 
-.decorated-zone::after {
+.theme_light .decorated-zone::after {
   border-inline-start: 1px solid var(--fontcolor);
   border-block-end: 1px solid var(--fontcolor);
 }
 
-.title-decor {
+.theme_light .title-decor {
   background-color: var(--bgcolor);
 }
 
-.section-title {
+.theme_light .txt-link {
+  text-shadow: 2px 2px 0px var(--bgcolor)
+}
+
+.theme_light .section-title {
   color: var(--fontcolor);
 }
 
-.section-text {
+.theme_light .section-text {
   color: var(--fontcolor);
 }
 
-.list-title {
+.theme_light .list-title {
   color: var(--fontcolor);
 }
 
-.footer-title {
+.theme_light .footer-title {
   color: var(--htitlecolor);
-  text-shadow: 2px 2px 0px var(--bgcolor);
-} */
+}
+
+@media (575px < width < 915px) {
+  .theme_light .header-title {
+    text-shadow: 4px 4px 0px var(--bgcolor)
+  }
+
+  .theme_light .footer-title {
+    text-shadow: 4px 4px 0px var(--bgcolor)
+  }
+}
+
+@media (width <= 375px) {
+  .theme_light .header-title {
+    text-shadow: 4px 4px 0px var(--bgcolor)
+  }
+
+  .theme_light .footer-title {
+    text-shadow: 4px 4px 0px var(--bgcolor)
+  }
+}

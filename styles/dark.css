@@ -14,13 +14,75 @@
   --tbckcolor: #FF0070;
   --focuscolor: #DB00FF;
   --sectxtcolor: #F1B2CE;
+
+  background-image: url(../images/cover-image-dark.png);
+
 }
 
-  @media (prefers-color-scheme: dark) {
-    :root.page.theme_dark {
-      --tcolor: #000028;
-      --tbckcolor: #FF0070;
-      --focuscolor: #DB00FF;
-      --sectxtcolor: #F1B2CE;
-    }
-  }
+/* .theme_dark .header__theme-menu-button {
+  color: var(--tbckcolor);
+}
+
+.theme_dark .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--tbckcolor);
+}
+
+.theme_dark .header__theme-menu-button_active {
+  outline: 1px solid var(--tbckcolor);
+}
+
+.theme_dark .title-decor {
+  background-color: var(--tbckcolor);
+}
+
+.theme_dark .header-text {
+  color: var(--tcolor);
+}
+
+.theme_dark .header-title {
+  color: var(--focuscolor);
+  text-shadow: 4px 4px 0px var(--tbckcolor);
+}
+
+.theme_dark .dark-theme-decoration::before {
+  color: var(--tbckcolor);
+}
+
+.theme_dark .decoration-point::before {
+  background-color: var(--tbckcolor);
+  box-shadow: 0px 0px 3px 2px var(--tbckcolor);
+}
+
+.theme_dark .decorated-zone::before {
+  border-inline-end: 1px solid var(--tbckcolor);
+  border-block-start: 1px solid var(--tbckcolor);
+}
+
+.theme_dark .decorated-zone::after {
+  border-inline-start: 1px solid var(--tbckcolor);
+  border-block-end: 1px solid var(--tbckcolor);
+}
+
+.theme_dark .section-title {
+  color: var(--tbckcolor);
+}
+
+.theme_dark .section-text {
+  color: var( --sectxtcolor);
+}
+
+.theme_dark .txt-link {
+  text-shadow: 2px 2px 0px var(--tbckcolor);
+}
+
+.theme_dark .txt-link:hover {
+  border-bottom: 1px solid var(--sectxtcolor);
+}
+
+.theme_dark .txt-link:focus-visible {
+  outline: 1px solid var(--sectxtcolor);
+}
+
+.theme_dark .list-title {
+  color: var(--tcolor);
+} */
