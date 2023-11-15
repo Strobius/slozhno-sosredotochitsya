@@ -14,82 +14,22 @@
   --tbckcolor: #FF0070;
   --focuscolor: #DB00FF;
   --sectxtcolor: #F1B2CE;
+  --title_shadow_color: #ff0070;
+  --button_color: #ff0070;
+  --button_hover_color: rgba(255, 0, 112, 0.40);
+  --section_title_color: #ff0070;
 
   background-image: var(--bgimage);
 
 }
 
-.theme_dark .header__theme-menu-button {
-  color: var(--tbckcolor, #ff0070);
-}
 
-.theme_dark .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--tbckcolor, #ff0070);
-}
-
-.theme_dark .header__theme-menu-button_active {
-  outline: 1px solid var(--tbckcolor, #ff0070);
-}
-
-.theme_dark .title-decor {
-  background-color: var(--tbckcolor, #ff0070);
-}
-
-.theme_dark .header-text {
-  color: var(--tcolor, #000028);
-}
-
-.theme_dark .header-title {
-  color: var(--focuscolor, #DB00FF);
-  text-shadow: 4px 4px 0px var(--tbckcolor, #ff0070);
-}
-
-.theme_dark .dark-theme-decoration::before {
+.theme_dark .header_decoration::before {
   display: block;
-  color: var(--tbckcolor, #ff0070);
 }
 
-.theme_dark .decoration-point::before {
+.theme_dark .header_decoration::after {
   display: block;
-  background-color: var(--tbckcolor);
-  box-shadow: 0px 0px 3px 2px var(--tbckcolor, #ff0070);
 }
 
-.theme_dark .decorated-zone::before {
-  border-inline-end: 1px solid var(--tbckcolor, #ff0070);
-  border-block-start: 1px solid var(--tbckcolor, #ff0070);
-}
 
-.theme_dark .decorated-zone::after {
-  border-inline-start: 1px solid var(--tbckcolor, #ff0070);
-  border-block-end: 1px solid var(--tbckcolor, #ff0070);
-}
-
-.theme_dark .section-title {
-  color: var(--tbckcolor, #ff0070);
-}
-
-.theme_dark .section-text {
-  color: var( --sectxtcolor, #F1B2CE);
-}
-
-.theme_dark .txt-link {
-  text-shadow: 2px 2px 0px var(--tbckcolor ,#ff0070);
-}
-
-.theme_dark .txt-link:hover {
-  border-bottom: 1px solid var(--sectxtcolor, #F1B2CE);
-}
-
-.theme_dark .txt-link:focus-visible {
-  outline: 1px solid var(--sectxtcolor, #F1B2CE);
-}
-
-.theme_dark .list-title {
-  color: var(--tcolor, #000028);
-}
-
-.theme_dark .footer-title {
-  color: var(--focuscolor, #DB00FF);
-  text-shadow: 2px 2px 0px var(--tbckcolor, #ff0070);
-}

@@ -10,194 +10,46 @@
   */
 
 .page.theme_light {
-    --fontcolor: #353430;
-    --htitlecolor: #ffc2e6;
-    --bgcolor: #FF8DCB;
-    --themelightimg: url(../images/cover-image-light.png);
+    --sectxtcolor: #353430;
+    --button_color: #353430;
+    --focuscolor: #ffc2e6;
+    --tbckcolor: #FF8DCB;
+    --section_title_color: #353430;
+    --button_hover_color: rgba(50, 49, 45, 0.40);
+    --bgimage: url(../images/cover-image-light.png);
 
     
-    background-image: var(--themelightimg);
+    background-image: var(--bgimage, url(../images/cover-image-light.png));
+    background-color: #fff;
 
 }
 
-.theme_light .header__theme-menu-button {
-  color: var(--fontcolor);
-}
-
-.theme_light .header__theme-menu-button_active {
-  outline: 1px solid var(--fontcolor);
-}
-
-.theme_light .header__theme-menu-button:focus-visible {
-  outline: none;
-  border-bottom: 1px solid var(--fontcolor);
-}
-
-.theme_light .header-title {
-  color: var(--htitlecolor);
-}
-
-.theme_light .header-text {
-  color: var(--fontcolor);
-}
-
-.theme_light .dark-theme-decoration::before {
+.theme_light .header_decoration::after {
   display: none;
 }
 
-.theme_light .decoration-point::before {
+
+.theme_light .header_decoration::before {
   display: none;
 }
-
-.theme_light .decorated-zone::before {
-  border-inline-end: 1px solid var(--fontcolor);
-  border-block-start: 1px solid var(--fontcolor);
-}
-
-.theme_light .decorated-zone::after {
-  border-inline-start: 1px solid var(--fontcolor);
-  border-block-end: 1px solid var(--fontcolor);
-}
-
-.theme_light .title-decor {
-  background-color: var(--bgcolor);
-}
-
-.theme_light .txt-link {
-  text-shadow: 2px 2px 0px var(--bgcolor)
-}
-
-.theme_light .section-title {
-  color: var(--fontcolor);
-}
-
-.theme_light .section-text {
-  color: var(--fontcolor);
-}
-
-.theme_light .list-title {
-  color: var(--fontcolor);
-}
-
-.theme_light .footer-title {
-  color: var(--htitlecolor);
-}
-
-@media (575px < width < 915px) {
-  .theme_light .header-title {
-    text-shadow: 4px 4px 0px var(--bgcolor)
-  }
-
-  .theme_light .footer-title {
-    text-shadow: 4px 4px 0px var(--bgcolor)
-  }
-}
-
-@media (width <= 375px) {
-  .theme_light .header-title {
-    text-shadow: 4px 4px 0px var(--bgcolor)
-  }
-
-  .theme_light .footer-title {
-    text-shadow: 4px 4px 0px var(--bgcolor)
-  }
-}
-
 
 @media (prefers-color-scheme: light) {
   :root {
-    --fontcolor: #353430;
-    --htitlecolor: #ffc2e6;
-    --bgcolor: #FF8DCB;
-    --themelightimg: url(../images/cover-image-light.png);
+    --sectxtcolor: #353430;
+    --button_color: #353430;
+    --focuscolor: #ffc2e6;
+    --tbckcolor: #FF8DCB;
+    --section_title_color: #353430;
+    --button_hover_color: rgba(50, 49, 45, 0.40);
+    --bgimage: url(../images/cover-image-light.png);
   }
 
-  .page {
-    background-image: var(--themelightimg);
+  .header_decoration::after {
+    display: none;
   }
 
-   .header__theme-menu-button {
-    color: var(--fontcolor);
-  }
-  
-   .header__theme-menu-button_active {
-    outline: 1px solid var(--fontcolor);
-  }
-  
-   .header__theme-menu-button:focus-visible {
-    outline: none;
-    border-bottom: 1px solid var(--fontcolor);
-  }
-  
-   .header-title {
-    color: var(--htitlecolor);
-  }
-  
-   .header-text {
-    color: var(--fontcolor);
-  }
-  
-   .dark-theme-decoration::before {
+  .header_decoration::before {
     display: none;
   }
-  
-   .decoration-point::before {
-    display: none;
-  }
-  
-   .decorated-zone::before {
-    border-inline-end: 1px solid var(--fontcolor);
-    border-block-start: 1px solid var(--fontcolor);
-  }
-  
-   .decorated-zone::after {
-    border-inline-start: 1px solid var(--fontcolor);
-    border-block-end: 1px solid var(--fontcolor);
-  }
-  
-   .title-decor {
-    background-color: var(--bgcolor);
-  }
-  
-   .txt-link {
-    text-shadow: 2px 2px 0px var(--bgcolor)
-  }
-  
-   .section-title {
-    color: var(--fontcolor);
-  }
-  
-   .section-text {
-    color: var(--fontcolor);
-  }
-  
-  .list-title {
-    color: var(--fontcolor);
-  }
-  
-   .footer-title {
-    color: var(--htitlecolor);
-  }
-  
-  @media (575px < width < 915px) {
-     .header-title {
-      text-shadow: 4px 4px 0px var(--bgcolor)
-    }
-  
-     .footer-title {
-      text-shadow: 4px 4px 0px var(--bgcolor)
-    }
-  }
-  
-  @media (width <= 375px) {
-     .header-title {
-      text-shadow: 4px 4px 0px var(--bgcolor)
-    }
-  
-     .footer-title {
-      text-shadow: 4px 4px 0px var(--bgcolor)
-    }
-  }
-  
+
 }
-
