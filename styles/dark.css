@@ -18,8 +18,11 @@
   --button_color: #ff0070;
   --button_hover_color: rgba(255, 0, 112, 0.40);
   --section_title_color: #ff0070;
+  --header_decor_color: #ff0070;
+  --bg_color: rgb(0, 0, 40);
+  --bgimage: url(../images/cover-image-dark.png);
 
-  background-image: var(--bgimage);
+  background-image: var(--bgimage, url(../images/cover-image-dark.png));
 
 }
 
