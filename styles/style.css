@@ -4,7 +4,7 @@
   max-inline-size: 1024px;
   font-family: var(--mainfontf, 'IBM Plex mono', monospace);
   background-image: var(--bgimage, url(../images/cover-image-dark.png));
-  background-color: var(--bg_color);
+  background-color: var(--bg_color, rgb(0, 0, 40));
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
