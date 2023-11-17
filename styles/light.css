@@ -11,6 +11,7 @@
 
 .page.theme_light {
     --sectxtcolor: #353430;
+    --tcolor: #353430;
     --button_color: #353430;
     --focuscolor: #ffc2e6;
     --tbckcolor: #FF8DCB;
@@ -39,6 +40,7 @@
   :root {
     --sectxtcolor: #353430;
     --button_color: #353430;
+    --tcolor: #353430;
     --focuscolor: #ffc2e6;
     --tbckcolor: #FF8DCB;
     --section_title_color: #353430;
