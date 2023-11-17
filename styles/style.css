@@ -168,6 +168,7 @@
   font-size: var(--fsize, 18px);
   color: var(--section_title_color, #ff0070);
   font-family: inherit;
+  max-inline-size: 315px;
 }
 
 .section-text {
@@ -201,6 +202,10 @@
   line-height: 23.4px;
 }
 
+.text-title {
+  font-weight: normal;
+}
+
 .why-section {
   display: grid;
   grid-template-columns: 32% 2fr;
@@ -219,7 +224,7 @@
   font-family: var(--mainfontf, 'IBM Plex mono', monospace);
 }
 
-.three-columns_list {
+.which_list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -333,7 +338,7 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .three-columns_list {
+  .which_list {
     display: flex;
     flex-direction: column;
   }

@@ -44,6 +44,8 @@
     --section_title_color: #353430;
     --button_hover_color: rgba(50, 49, 45, 0.40);
     --bgimage: url(../images/cover-image-light.png);
+    --bg_color: #fff;
+    --header_decor_color: #353430;
   }
 
   .header_decoration::after {

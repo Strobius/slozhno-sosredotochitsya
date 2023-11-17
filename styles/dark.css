@@ -27,6 +27,22 @@
 }
 
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tcolor: #000028;
+    --tbckcolor: #FF0070;
+    --focuscolor: #DB00FF;
+    --sectxtcolor: #F1B2CE;
+    --title_shadow_color: #ff0070;
+    --button_color: #ff0070;
+    --button_hover_color: rgba(255, 0, 112, 0.40);
+    --section_title_color: #ff0070;
+    --header_decor_color: #ff0070;
+    --bg_color: rgb(0, 0, 40);
+    --bgimage: url(../images/cover-image-dark.png);
+  }
+}
+
 .theme_dark .header_decoration::before {
   display: block;
 }
